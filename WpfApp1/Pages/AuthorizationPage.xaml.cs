@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfApp1.Window;
+using WpfApp1.DBConnection;
 
 namespace WpfApp1.Pages
 {
@@ -28,12 +29,14 @@ namespace WpfApp1.Pages
 
         private void loginBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Emploe());
+            Emploe emploe = new Emploe();
+            emploe.Show();
+
         }
 
         private void loginReaderBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new AuthorizationPage());
+            NavigationService.Navigate(new ReadersPage());
         }
     }
 }

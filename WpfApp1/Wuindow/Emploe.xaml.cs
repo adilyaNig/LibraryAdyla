@@ -31,7 +31,7 @@ namespace WpfApp1.Window
 
         private void bookBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            menuFr.NavigationService.Navigate(new Book());
         }
 
         private void reportBtn_Click(object sender, RoutedEventArgs e)

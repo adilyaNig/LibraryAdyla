@@ -1,0 +1,94 @@
+﻿<Window x:Class="WpfApp1.Wuindow.AddReaderTicketWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Wuindow"
+        mc:Ignorable="d"
+        Title="AddReaderTicketWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            
+        </Grid.RowDefinitions>
+        <TextBlock Text="Читатели"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Right"
+                   Margin="0 0 5 0"
+                   FontSize="20"/>
+        <ComboBox Grid.Column="1"
+                  Height="20" 
+                  Width="100" 
+                  HorizontalAlignment="Left"
+                  Name="ReaderCm"
+                  ItemsSource="{Binding readers}" SelectionChanged="ReaderCm_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Lastname}"/>
+                        <TextBlock Text="{Binding Name}"/>
+                        <TextBlock Text="{Binding Patronymic}"/>
+                        <TextBlock Text="{Binding Phone}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Button Grid.Row="0" Grid.Column="2" 
+                Height="20" 
+                Width="100" 
+                HorizontalAlignment="Left"
+                Content="Добавить" Click="Button_Click" />
+
+        <TextBlock Text="Сотрудник: "  
+                   Grid.Row="1"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Right"
+                    Margin="0 0 5 0"
+                   FontSize="20"/>
+        <ComboBox Grid.Column="1"
+            Height="20" 
+            Width="100" 
+            HorizontalAlignment="Left"
+                  Grid.Row="1"
+                  Name="EmployeeCm"
+            ItemsSource="{Binding employees}" SelectionChanged="EmployeeCm_SelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel>
+                        <TextBlock Text="{Binding Lastname}"/>
+                        <TextBlock Text="{Binding Name}"/>
+                        <TextBlock Text="{Binding Patronymic}"/>
+                        
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <Button x:Name="SaveTicketBtn"
+                Grid.ColumnSpan="2"
+                Grid.Row="2"
+                Height="35"
+                Width="100"
+                Content="Сохранить"
+                Click="SaveTicketBtn_Click"/>
+        <Button x:Name="UpdateBtn"
+         Grid.ColumnSpan="2"
+         Grid.Column="2"
+         Height="35"
+         Width="60"
+                FontSize="10"
+                Margin="0 0 5 0"
+                VerticalAlignment="Bottom"
+                HorizontalAlignment="Right"
+         Content="Обновить" Click="UpdateBtn_Click" />
+
+    </Grid>
+</Window>

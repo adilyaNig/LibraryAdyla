@@ -12,33 +12,34 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using WpfApp1.Window;
+using WpfApp1.DBConnection;
 
 namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Authorization.xaml
+    /// Логика взаимодействия для Book.xaml
     /// </summary>
-    public partial class Authorization : Page
+    public partial class Book : Page
     {
-        public Authorization()
+        public static List<Book> books { get; set; }
+        public static List<Author> authors { get; set; }
+        public Book()
         {
             InitializeComponent();
+          
+
+               
         }
 
-        private void loginBtn_Click(object sender, RoutedEventArgs e)
+
+        private void BookSearchTb_TextChanged(object sender, TextChangedEventArgs e)
         {
-            NavigationService.Navigate(new AuthorizationPage());
+           
         }
 
-        private void loginReaderBtn_Click(object sender, RoutedEventArgs e)
+        private void FilterrB_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            
-        }
-
-        private void loginTb_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+      
         }
     }
 }
