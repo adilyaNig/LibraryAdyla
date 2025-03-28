@@ -20,7 +20,7 @@ namespace WpfApp1.Pages
     /// <summary>
     /// Логика взаимодействия для AuthorizationPage.xaml
     /// </summary>
-    public partial class AuthorizationPage 
+    public partial class AuthorizationPage:Page
     {
         public AuthorizationPage()
         {
@@ -36,7 +36,7 @@ namespace WpfApp1.Pages
 
         private void loginReaderBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new ReadersPage());
+            NavigationService.Navigate(new ReadersPagee());
         }
     }
 }

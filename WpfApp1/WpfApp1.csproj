@@ -87,18 +87,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="..\..\..\..\..\..\931\ReadersPage.xaml.cs">
-      <DependentUpon>ReadersPage.xaml</DependentUpon>
-      <Link>Pages\ReadersPage.xaml.cs</Link>
+    <Compile Include="Pages\BooksPage.xaml.cs">
+      <DependentUpon>BooksPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Book.xaml.cs">
-      <DependentUpon>Book.xaml</DependentUpon>
+    <Compile Include="Pages\ReadersPagee.xaml.cs">
+      <DependentUpon>ReadersPagee.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wuindow\AddAuthorWindo.xaml.cs">
+      <DependentUpon>AddAuthorWindo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wuindow\AddBookWindo.xaml.cs">
+      <DependentUpon>AddBookWindo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Wuindow\AddEmployeeTicketWindow.xaml.cs">
       <DependentUpon>AddEmployeeTicketWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Wuindow\AddReaderTicketWindow.xaml.cs">
       <DependentUpon>AddReaderTicketWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Wuindow\AddReaderWindo.xaml.cs">
+      <DependentUpon>AddReaderWindo.xaml</DependentUpon>
     </Compile>
     <Compile Include="Wuindow\Emploe.xaml.cs">
       <DependentUpon>Emploe.xaml</DependentUpon>
@@ -164,7 +172,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\Authorization.xaml">
+    <Page Include="Pages\AuthorizationReaderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -172,12 +180,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="..\..\..\..\..\..\931\ReadersPage.xaml">
+    <Page Include="Pages\BooksPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-      <Link>Pages\ReadersPage.xaml</Link>
     </Page>
-    <Page Include="Pages\Book.xaml">
+    <Page Include="Pages\ReadersPagee.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wuindow\AddAuthorWindo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Wuindow\AddBookWindo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -189,14 +204,18 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Wuindow\AddReaderWindo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Wuindow\Emploe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Pages\Authorization.xaml.cs">
-      <DependentUpon>Authorization.xaml</DependentUpon>
+    <Compile Include="Pages\AuthorizationReaderPage.xaml.cs">
+      <DependentUpon>AuthorizationReaderPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>

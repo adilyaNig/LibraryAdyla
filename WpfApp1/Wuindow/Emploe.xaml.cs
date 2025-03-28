@@ -17,7 +17,7 @@ namespace WpfApp1.Window
     /// <summary>
     /// Логика взаимодействия для Emploe.xaml
     /// </summary>
-    public partial class Emploe 
+    public partial class Emploe
     {
         public Emploe()
         {
@@ -26,12 +26,12 @@ namespace WpfApp1.Window
 
         private void readerBtn_Click(object sender, RoutedEventArgs e)
         {
-            menuFr.NavigationService.Navigate(new ReadersPage());
+            menuFr.NavigationService.Navigate(new ReadersPagee());
         }
 
         private void bookBtn_Click(object sender, RoutedEventArgs e)
         {
-            menuFr.NavigationService.Navigate(new Book());
+            menuFr.NavigationService.Navigate(new BooksPage());
         }
 
         private void reportBtn_Click(object sender, RoutedEventArgs e)

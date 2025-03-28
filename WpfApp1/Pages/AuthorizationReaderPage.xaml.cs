@@ -17,28 +17,18 @@ using WpfApp1.Window;
 namespace WpfApp1.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для Authorization.xaml
+    /// Логика взаимодействия для AuthorizationReaderPage.xaml
     /// </summary>
-    public partial class Authorization : Page
+    public partial class AuthorizationReaderPage : Page
     {
-        public Authorization()
+        public AuthorizationReaderPage()
         {
             InitializeComponent();
         }
-
         private void loginBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new AuthorizationPage());
-        }
-
-        private void loginReaderBtn_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-
-        private void loginTb_TextChanged(object sender, TextChangedEventArgs e)
-        {
 
         }
+
     }
 }
